@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stack Jackpot | Fullstack Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="machine">
+    <div class="eyebrow">THE DEVELOPER'S CASINO</div>
+    <h1>STACK <span>JACKPOT</span></h1>
+    <p class="subtitle">
+      Can't decide what to build with? Let the reels decide.
+    </p>
+
+    <div class="options">
+      <label class="toggle">
+        <input type="checkbox" id="enableDb">
+        <span class="switch"></span>
+        Add Database
+      </label>
+
+      <label class="toggle">
+        <input type="checkbox" id="enableBackend">
+        <span class="switch"></span>
+        Add Backend
+      </label>
+    </div>
+
+    <div class="slot-machine">
+      <div id="reels" class="reels"></div>
+      <div class="machine-bottom">
+      </div>
+    </div>
+
+    <button id="spinButton" class="spin-button">
+      <span class="play">▶</span> SPIN THE STACK
+    </button>
+
+    <div class="bottom-info">
+      <span>SPINS: <strong id="spinCount">0</strong></span>
+      <span id="status">READY TO SPIN</span>
+    </div>
+
+    <section id="result" class="result" hidden>
+      <h2>YOUR NEW TECH STACK</h2>
+      <div id="resultItems" class="result-items"></div>
+      <button id="copyButton" class="copy-button">
+        Copy Stack
+      </button>
+    </section>
+  </main>
+</body>
+</html>
